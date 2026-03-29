@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# MATLAB autosave / backup
+*.asv
+*.m~
+
+# MATLAB build / compiled artifacts
+*.mex*
+*.mlappinstall
+*.p
+*.fig~
+
+# Logs / temporary files
+*.log
+*.tmp
