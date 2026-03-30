@@ -1,13 +1,15 @@
 # MATLAB Maze Generator and Solver
 
+This project was originally completed in 2023 as a course project and has been uploaded to GitHub as part of my portfolio. It is a MATLAB-based maze generator and solver with a graphical user interface that allows users to configure maze dimensions, difficulty, and solving algorithm.
+
 ## What does this project do?
 
 This project generates and solves a maze in MATLAB through a graphical user interface. The user can choose the maze length, height, difficulty, and the algorithm used to solve the maze.
 
 To generate the maze, the program follows these steps:
 
-1. Generate a maze matrix where walls and paths are represented in a grid-based structure.
-2. Treat the logical maze cells as nodes connected by possible paths.
+1. Generate a grid-based maze matrix containing walls and open paths.
+2. Treat the logical maze cells as connected nodes.
 3. Use a Depth-First Search (DFS) backtracking approach to carve passages between cells and create a valid maze.
 4. Add entry and exit points so the maze can always be solved.
 5. Adjust the maze difficulty by opening extra walls:
@@ -22,53 +24,60 @@ The program then allows the maze to be solved and visualised using different pat
 - User-defined maze length and height
 - Adjustable difficulty setting
 - Maze generation and visualisation
-- Animated maze solving
-- Exploration visualisation for each algorithm
-- Clear/reset button to restore the startup state
+- Animated solving and path tracing
+- DFS, BFS, and A* pathfinding
+- Exploration visualisation for search behaviour
+- Clear/reset functionality
 
 ## Algorithms used
 
-### DFS and BFS
+### DFS
 
-**DFS (Depth-First Search)** is used in two ways in this project.
+DFS is used to generate the maze using a backtracking approach. It can also be used as a solving algorithm, where it explores one branch deeply before backtracking.
 
-First, it is used to generate the maze by carving paths between cells using a backtracking process.
+### BFS
 
-Second, it can also be used as a solving algorithm. DFS explores one branch as far as possible before backtracking and continuing through other branches. It is effective for finding a path, but it does not always give the shortest path.
+BFS explores the maze level by level and guarantees the shortest path in this unweighted grid-based maze.
 
-**BFS (Breadth-First Search)** explores the maze level by level. It uses a queue-based approach and checks neighbouring cells in layers moving outward from the start. In an unweighted maze like this one, BFS guarantees the shortest path.
+### A*
 
-### A* Star
+A* uses a heuristic to guide the search toward the goal more efficiently, while still finding a shortest path in the maze.
 
-**A\*** is a more informed pathfinding algorithm. It combines the distance already travelled with a heuristic estimate of the remaining distance to the goal. In this project, the heuristic helps guide the search toward the exit more efficiently than uninformed search methods in many cases.
+## Maze representation
 
-A\* is widely used in pathfinding problems because it balances correctness and efficiency.
-
-## How the maze is represented
-
-The maze is stored as a matrix:
+The maze is stored as a matrix where:
 
 - `1` represents a wall
 - `0` represents an open path
 
-For display, the maze is shown with:
+In the interface, walls are shown in black and traversable paths are shown in white. The start and goal positions are marked clearly, and the selected solving algorithm animates both the explored area and the final solution path.
 
-- black tiles for walls
-- white tiles for traversable paths
+## Screenshots
 
-The start and goal positions are marked clearly on the interface, and the selected solving algorithm animates both the explored area and the final path.
+### Main interface
+![Main interface](main-interface.png)
 
-## How to run the project
+### Generated maze
+![Generated maze](generated-maze.png)
+
+### DFS exploration
+![DFS exploration](dfs-exploration.png)
+
+### DFS solution
+![DFS solution](dfs-solution.png)
+
+### A* solution
+![A* solution](a-star-solution.png)
+
+## How to run
 
 1. Open MATLAB
 2. Run `maze_app`
-3. Enter the maze length, height, and difficulty
+3. Enter maze length, height, and difficulty
 4. Select a solving algorithm
 5. Click **Generate Maze**
 6. Click **Solve**
 
 ## Notes
 
-This project was originally completed in 2023 as a course project and has been uploaded here as part of my portfolio.
-
-Future improvements could include adding other pathfinding algorithms such as Dijkstra’s algorithm.
+This project was originally completed in 2023 and is being uploaded to GitHub as part of my portfolio.
