@@ -61,10 +61,10 @@ In the interface, walls are shown in black and traversable paths are shown in wh
 ![Generated maze](screenshots/generated-maze.png)
 
 ### DFS exploration
-![DFS exploration](screenshots/dfs-exploration.png)
+![DFS solution](screenshots/dfs-solution.png)
 
 ### DFS solution
-![DFS solution](screenshots/dfs-solution.png)
+![DFS exploration](screenshots/dfs-exploration.png)
 
 ### A* solution
 ![A* solution](screenshots/a-star-solution.png)
