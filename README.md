@@ -55,19 +55,19 @@ In the interface, walls are shown in black and traversable paths are shown in wh
 ## Screenshots
 
 ### Main interface
-![Main interface](main-interface.png)
+![Main interface](screenshots/main-interface.png)
 
 ### Generated maze
-![Generated maze](generated-maze.png)
+![Generated maze](screenshots/generated-maze.png)
 
 ### DFS exploration
-![DFS exploration](dfs-exploration.png)
+![DFS exploration](screenshots/dfs-exploration.png)
 
 ### DFS solution
-![DFS solution](dfs-solution.png)
+![DFS solution](screenshots/dfs-solution.png)
 
 ### A* solution
-![A* solution](a-star-solution.png)
+![A* solution](screenshots/a-star-solution.png)
 
 ## How to run
 
