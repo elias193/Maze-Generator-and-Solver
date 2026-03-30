@@ -81,3 +81,5 @@ In the interface, walls are shown in black and traversable paths are shown in wh
 ## Notes
 
 This project was originally completed in 2023 and is being uploaded to GitHub as part of my portfolio.
+
+Future improvements could include adding other pathfinding algorithms such as Dijkstra’s algorithm.
