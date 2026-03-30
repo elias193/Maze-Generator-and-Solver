@@ -70,3 +70,4 @@ The start and goal positions are marked clearly on the interface, and the select
 ## Notes
 
 This project was originally completed in 2023 as a course project and has been uploaded here as part of my portfolio.
+Future improvements could include adding other pathfinding algorithms such as Dijkstra’s algorithm.
